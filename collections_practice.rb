@@ -5,7 +5,11 @@ def begins_with_r (array)
 
   while i < array.length
     return false if array[i][0] != 'r'
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 065f2448381898ebf261ff69d5c713acc856c63f
 
     i+=1
   end
@@ -13,6 +17,7 @@ def begins_with_r (array)
 end
 
 def contain_a (array)
+<<<<<<< HEAD
 
   array.select {|element| element.include? "a"}
 
@@ -20,22 +25,44 @@ end
 
 def first_wa (array)
 
+=======
+  
+  array.select {|element| element.include? "a"}
+  
+end
+
+def first_wa (array)
+  
+>>>>>>> 065f2448381898ebf261ff69d5c713acc856c63f
   array.each do |element|
     if element[0..1] == 'wa'
       return element
     end
   end
+<<<<<<< HEAD
 
 end
 
 def remove_non_strings (array)
   new_array = []
 
+=======
+  
+end 
+
+def remove_non_strings (array)
+  new_array = []
+  
+>>>>>>> 065f2448381898ebf261ff69d5c713acc856c63f
   array.each_with_index do |element, index|
     if element.class == String
      new_array << element
     end
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> 065f2448381898ebf261ff69d5c713acc856c63f
   end
   new_array
 end
@@ -54,6 +81,7 @@ uniq_array
 end
 
 def merge_data (data1, data2)
+<<<<<<< HEAD
 
   first = nil
   last = nil
@@ -121,3 +149,7 @@ def organize_schools (schools)
   end
   organized_schools_hash
 end
+=======
+   data1.each ||
+end
+>>>>>>> 065f2448381898ebf261ff69d5c713acc856c63f
